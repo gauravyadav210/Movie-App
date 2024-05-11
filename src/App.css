@@ -1,0 +1,158 @@
+/* App.css */
+
+/* Page container */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #eddcdc;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Search input */
+.search-input {
+  background-color: #ede3e3;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #666;
+  font-size: 16px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007bff; /* Blue focus color */
+}
+
+/* Filter select dropdown */
+.filter-select {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #666;
+  font-size: 16px;
+  width: 200px;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #007bff; /* Blue focus color */
+}
+
+/* Movie list */
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Movie item */
+.movie-item {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+} 
+
+.movie-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Movie image */
+.movie-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Movie details */
+.movie-details {
+  margin-top: 10px;
+}
+
+.movie-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #9cf; /* Light blue */
+}
+
+.movie-description {
+  font-size: 14px;
+  color: #ddd; /* Light gray */
+}
+
+.movie-meta {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #aaa; /* Lighter gray */
+}
+
+/* Borrow button */
+.borrow-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.borrow-button:hover {
+  background-color: #0056b3;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.imgSize {
+  width: 250px;
+  height: 250px;
+}
+.moviesData{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration-line: overline;
+}
